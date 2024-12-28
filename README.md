@@ -94,7 +94,7 @@ In production, asset paths might look like this in your `.css` or `.js` files:
 ```css
 background-image: url('/cloud-scout/assets/images/background.jpg');
 
-Font-Family
+```Font Family
 src: url(/cloud-scout/fonts/iosevkanerdfontmono.ttf) format("truetype");
 ```
 
