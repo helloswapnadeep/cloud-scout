@@ -77,8 +77,6 @@ weather-webapp/
 
 ---
 
----
-
 ## ☢️ Important Announcement
 
 ```markdown
