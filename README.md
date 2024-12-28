@@ -48,8 +48,8 @@ To run the project locally, follow these steps:
 ```
 weather-webapp/
 ├── index.html                      # Main HTML file
-├── Components/styles.css           # Styling for the app
-├── Components/scripts.js           # JavaScript for functionality
+├── components/styles.css           # Styling for the app
+├── components/scripts.js           # JavaScript for functionality
 └── README.md                       # Project documentation
 ```
 
@@ -77,6 +77,74 @@ weather-webapp/
 
 ---
 
+---
+
+## ☢️ Important Announcement
+
+```markdown
+# Fixing Asset Paths for Local Development
+
+When working on a web project locally, you might encounter issues where images or fonts fail to load. This often happens because the asset paths in the code include a prefix specific to the production environment, such as `/cloud-scout`.
+
+## Problem
+
+In production, asset paths might look like this in your `.css` or `.js` files:
+
+### Example
+```css
+background-image: url('/cloud-scout/assets/images/background.jpg');
+```
+```Font Family
+src: url(/cloud-scout/fonts/iosevkanerdfontmono.ttf) format("truetype");
+```
+
+These paths work in production but fail on a local system because the `/cloud-scout` prefix doesn't exist in the local environment.
+
+## Solution
+
+To fix this issue, **remove the `/cloud-scout` prefix** and use relative paths instead.
+
+### Updated Code
+```css
+background-image: url('/assets/images/background.jpg');
+```
+```Font Family
+src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
+```
+
+
+## Benefits of Using Relative Paths
+1. **Local Compatibility**: Assets will load correctly on your local system.
+2. **Cross-Environment Consistency**: The project will work seamlessly in both local and production environments.
+3. **Simpler Maintenance**: Relative paths are easier to manage during development and deployment.
+
+## Implementation Steps
+1. Open your `.css` or `.js` files.
+2. Search for paths containing `/cloud-scout` (or any other production-specific prefix).
+3. Replace these paths with relative paths starting from the project root or relevant directory.
+
+### Before
+```css
+background-image: url('/cloud-scout/assets/images/background.jpg');
+```
+```Font Family
+src: url(/cloud-scout/fonts/iosevkanerdfontmono.ttf) format("truetype");
+```
+
+### After
+```css
+background-image: url('/assets/images/background.jpg');
+```
+```Font Family
+src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
+```
+
+By making these adjustments, your project will be ready for local development without breaking asset loading functionality.
+```
+
+This is structured for a clear and professional GitHub `README.md` file and uses Markdown conventions effectively.
+
+---
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
