@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Iosevka";
-  src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
+  src: url(/cloud-scout/fonts/iosevkanerdfontmono.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "JetBrains";
-  src: url(/fonts/jetbrainsnerdFontmono.ttf) format("truetype");
+  src: url(/cloud-scout/fonts/jetbrainsnerdFontmono.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
 }
 
 body {
-  background: url(/assets/bg.jpg);
+  background: url(/cloud-scout/assets/bg.jpg);
   width: 100%;
   height: 100dvh;
   background-size: cover;
