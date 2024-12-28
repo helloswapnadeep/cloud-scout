@@ -4,6 +4,7 @@ Here’s a tailored `README.md` for a weather web app built solely using HTML, C
 # Weather Web App 🌦️
 
 A simple and responsive weather web application that provides real-time weather updates and forecasts. Built using **HTML**, **CSS**, and **JavaScript**, this project is perfect for showcasing core web development skills and integrating external APIs.
+```
 
 ---
 
@@ -28,10 +29,8 @@ Check out the live app here: [Weather Web App Live](https://mypersona.cyou/cloud
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-   ```bash
    git clone https://github.com/helloswapnadeep/cloud-scout.git
    cd cloud-scout
-   ```
 
 2. Open the project directory and locate the `index.html` file.
 
