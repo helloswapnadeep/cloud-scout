@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Iosevka";
+  src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains";
+  src: url(/fonts/jetbrainsnerdFontmono.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains", monospace;
+  font-weight: normal;
+  color: white;
+}
+
+body {
+  background: url(/assets/bg.jpg);
+  width: 100%;
+  height: 100dvh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(0px);
+}
+
+.main-container {
+  border: solid;
+  border-radius: 3px;
+  width: 300px;
+  height: 496px;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.15),
+    rgba(255, 255, 255, 0.15)
+  );
+  backdrop-filter: blur(100px);
+  padding: 20px;
+}
+
+/* ! INPUT CONTAINER START */
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  background: rgba(0, 0, 0, 0.15);
+  outline: none;
+  transition: 0.25s border;
+  padding-right: 38px;
+  font-family: "Iosevka", monospace;
+}
+
+.city-input:focus {
+  border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.city-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.search-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+/* ! INPUT CONTAINER START */
+/* ! WEATHER INFO START */
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-date-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 6px;
+}
+
+.location > h4 {
+  font-family: "Iosevka", monospace;
+}
+
+.weather-summary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.weather-summary-img {
+  width: 120px;
+  height: 120px;
+}
+
+.weather-summary-info {
+  text-align: end;
+}
+
+.weather-summary-info h1 {
+  font-family: "Iosevka", monospace;
+}
+
+.weather-summary-info h3 {
+  font-family: "Iosevka", monospace;
+}
+
+/* ! WEATHER INFO END */
+/* ! WEATHER CONDITIONS START */
+
+.weather-conditions-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.condition-item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 6px;
+}
+
+.condition-item h5 {
+  font-family: "Iosevka", monospace;
+}
+
+.condition-item i {
+  font-size: 23px;
+}
+
+/* ! WEATHER CONDITIONS END */
+/* ! FORECAST CONDITIONS START */
+
+.forecast-items-container {
+  display: flex;
+  gap: 15px;
+  overflow: auto;
+  padding-bottom: 15px;
+}
+
+.forecast-items-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 500px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 500px;
+}
+
+.forecast-item {
+  min-width: 75px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  border-radius: 3px;
+  transition: 0.3s background;
+}
+
+.forecast-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.forecast-item-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ! FORECAST CONDITIONS END */
+/* ! MESSAGE START */
+
+.section-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 25%;
+}
+
+.section-message img {
+  height: 180px;
+  width: fit-content;
+}

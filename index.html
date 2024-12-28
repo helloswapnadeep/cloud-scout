@@ -49,11 +49,101 @@
     <meta name="twitter:site" content="@YourTwitterHandle" />
     <!-- ! Canonical URL (important for SEO) -->
     <link rel="canonical" href="mypersona.cyou/cloud-scout" />
+    <!-- ! Font Awesome Libraries (important for Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ! External CSS -->
     <link rel="stylesheet" href="Components/styles.css" />
     <!-- ! External JS -->
     <script src="Components/scripts.js" defer></script>
-    <!-- <img src="[image URL]" alt="Weather forecast showing current temperature and conditions in [Location]"> -->
   </head>
-  <body></body>
+  <body>
+    <main class="main-container">
+      <!-- ! User Input Start -->
+      <header class="input-container">
+        <input
+          type="text"
+          class="city-input"
+          placeholder="Enter a city name"
+          aria-label="Enter a city name"  />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+      </header>
+      <!-- ! User Input End -->
+      <!-- ! Weather Info Start -->
+      <section class="weather-info" style="display: none;">
+        <div class="location-date-container">
+          <div class="location">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <h4 class="country-txt">India</h4>
+          </div>
+          <h5 class="current-date-txt">Sun, 01 jan</h5>
+        </div>
+        <div class="weather-summary-container">
+          <img src="assets/weather/clouds.svg" alt="Weather forecast showing current temperature and conditions in [Location]" class="weather-summary-img">
+          <div class="weather-summary-info">
+            <h1 class="temp-text">29°C</h1>
+            <h3 class="condition-txt">Clouds</h3>
+          </div>
+        </div>
+        <div class="weather-conditions-container">
+          <div class="condition-item">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="condition-info">
+              <h5>Humidity</h5>
+              <h5 class="humidity-value-text">40%</h5>
+            </div>
+          </div>
+          <div class="condition-item">
+            <i class="fa-solid fa-wind"></i>
+            <div class="condition-info">
+              <h5>Wind Speed</h5>
+              <h5 class="wind-value-text">1 M/s</h5>
+            </div>
+          </div>
+        </div>
+        <div class="forecast-items-container">
+          <div class="forecast-item">
+            <h5 class="forecast-item-date">06 Jan</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="Weather forecast showing current temperature and conditions in [Location]" class="forecast-item-img">
+            <h5 class="forecast item-temp">29°C</h5>
+          </div>
+          <div class="forecast-item">
+            <h5 class="forecast-item-date">06 Jan</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="Weather forecast showing current temperature and conditions in [Location]" class="forecast-item-img">
+            <h5 class="forecast item-temp">29°C</h5>
+          </div>
+          <div class="forecast-item">
+            <h5 class="forecast-item-date">06 Jan</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="Weather forecast showing current temperature and conditions in [Location]" class="forecast-item-img">
+            <h5 class="forecast item-temp">29°C</h5>
+          </div>
+          <div class="forecast-item">
+            <h5 class="forecast-item-date">06 Jan</h5>
+            <img src="assets/weather/thunderstorm.svg" alt="Weather forecast showing current temperature and conditions in [Location]" class="forecast-item-img">
+            <h5 class="forecast item-temp">29°C</h5>
+          </div>
+        </div>
+      </section>
+      <!-- ! Weather Info End -->
+      <!-- ! Search City Start -->
+      <section class="search-city section-message">
+        <img src="assets/message/search-city.png" alt="Search City">
+         <div>
+          <h1>Search City</h1>
+          <h4>Find out weather Condition of your city</h4>
+         </div>
+      </section>
+      <!-- ! Search City End -->
+      <!-- ! City Not Found Start -->
+      <section class="not-found section-message" style="display: none;">
+        <img src="assets/message/not-found.png" alt="City Not Found">
+         <div>
+          <h1>Search City</h1>
+          <h4>Find out weather Condition of your city</h4>
+         </div>
+      </section>
+      <!-- ! City Not Found End -->
+    </main>
+  </body>
 </html>
