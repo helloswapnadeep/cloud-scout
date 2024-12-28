@@ -29,8 +29,8 @@ Check out the live app here: [Weather Web App Live](https://mypersona.cyou/cloud
 To run the project locally, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/helloswapnadeep/cloud-scout.git
-   cd cloud-scout
+   - git clone https://github.com/helloswapnadeep/cloud-scout.git
+   - cd cloud-scout
 
 2. Open the project directory and locate the `index.html` file.
 
