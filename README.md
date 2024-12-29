@@ -85,13 +85,13 @@ When working on a web project locally, you might encounter issues where images o
 
 ## Problem
 
-In production, asset paths might look like this in your `.css` or `.js` files:
+In production, asset paths might look like this in your `.css` file:
 
 ### Example
-```css
+```Css
 background-image: url('/cloud-scout/assets/images/background.jpg');
 
-```Font Family
+```Font
 src: url(/cloud-scout/fonts/iosevkanerdfontmono.ttf) format("truetype");
 ```
 
@@ -102,10 +102,10 @@ These paths work in production but fail on a local system because the `/cloud-sc
 To fix this issue, **remove the `/cloud-scout` prefix** and use relative paths instead.
 
 ### Updated Code
-```css
+```Css
 background-image: url('/assets/images/background.jpg');
 ```
-```Font Family
+```Font
 src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
 ```
 
@@ -116,23 +116,23 @@ src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
 3. **Simpler Maintenance**: Relative paths are easier to manage during development and deployment.
 
 ## Implementation Steps
-1. Open your `.css` or `.js` files.
+1. Open your `.css` file.
 2. Search for paths containing `/cloud-scout` (or any other production-specific prefix).
 3. Replace these paths with relative paths starting from the project root or relevant directory.
 
 ### Before
-```css
+```Css
 background-image: url('/cloud-scout/assets/images/background.jpg');
 ```
-```Font Family
+```Font
 src: url(/cloud-scout/fonts/iosevkanerdfontmono.ttf) format("truetype");
 ```
 
 ### After
-```css
+```Css
 background-image: url('/assets/images/background.jpg');
 ```
-```Font Family
+```Font
 src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
 ```
 
