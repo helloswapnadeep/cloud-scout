@@ -109,7 +109,6 @@ background-image: url('/assets/images/background.jpg');
 src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
 ```
 
-
 ## Benefits of Using Relative Paths
 1. **Local Compatibility**: Assets will load correctly on your local system.
 2. **Cross-Environment Consistency**: The project will work seamlessly in both local and production environments.
