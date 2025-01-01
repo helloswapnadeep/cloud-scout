@@ -403,12 +403,24 @@ hr {
   line-height: 1.5;
 }
 
+#signature, #github {
+  text-decoration: none;
+}
+
+#signature:hover {
+  color: rgba(210, 255, 114, 1);
+}
+
+#github:hover {
+  color: rgba(255, 219, 0, 1);
+}
+
 /* ! CONCLUSION CONTAINER END */
 /* ! RESPONSIVE START */
 
 @media (max-width: 480px) {
   body {
-    padding: 20px;
+    padding: 60px 20px;
   }
 }
 

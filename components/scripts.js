@@ -8,6 +8,13 @@ window.onload = function () {
 };
 
 // ! PRE LOADER END
+// ! DISABLED RIGHT CLICK START
+
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
+
+// ! DISABLED RIGHT CLICK END
 // ! HIDDEN MESSAGE START
 
 const scout =
