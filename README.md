@@ -139,8 +139,6 @@ src: url(/fonts/iosevkanerdfontmono.ttf) format("truetype");
 By making these adjustments, your project will be ready for local development without breaking asset loading functionality.
 ```
 
-This is structured for a clear and professional GitHub `README.md` file and uses Markdown conventions effectively.
-
 ---
 ## 📄 License
 
