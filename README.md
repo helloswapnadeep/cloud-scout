@@ -35,7 +35,7 @@ To run the project locally, follow these steps:
 2. Open the project directory and locate the `index.html` file.
 
 3. Set up your API key:
-   - Open the `script.js` file.
+   - Open the `scripts.js` file.
    - Replace `YOUR_API_KEY` with your [OpenWeatherMap API key](https://openweathermap.org/api).
 
 4. Open the `index.html` file in your browser to view the app.
